@@ -1,17 +1,29 @@
 // import logo from "./logo.svg";
 // import "./App.css";
 import { Component } from "react";
-import SassComponent from "./SassComponent";
+// import SassComponent from "./SassComponent";
+// import CSSModule from "./CSSModule";
+import StyledComponent from "./StyledComponent";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <SassComponent></SassComponent>
+        <StyledComponent></StyledComponent>
       </div>
     );
   }
 }
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <SassComponent></SassComponent>
+//       </div>
+//     );
+//   }
+// }
 
 // function App() {
 //   return (
