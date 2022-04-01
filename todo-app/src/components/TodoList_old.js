@@ -14,21 +14,21 @@ const TodoList = ({ todos, onRemove, onToggle }) => {
           onRemove={onRemove}
           onToggle={onToggle}
           style={style}
-        />
+        ></TodoListItem>
       );
     },
     [onRemove, onToggle, todos],
   );
+
   return (
     <List
       className="TodoList"
-      width={512} // 전체 크기
-      height={504} // 전체 높이
-      rowCount={todos.length} // 항목 개수
-      rowHeight={56} // 항목 높이
-      rowRenderer={rowRenderer} // 항목을 렌더링할 때 쓰는 함수
-      list={todos} // 배열
-      style={{ outline: 'none' }} // List에 기본 적용되는 outline 스타일 제거
+      width={512}
+      height={513}
+      rowCount={todos.length}
+      rowHeight={rowRenderer}
+      list={todos}
+      style={{ outline: 'none' }}
     />
   );
 };
